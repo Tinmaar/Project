@@ -1,15 +1,15 @@
 package ie.itsligo. roomRooter;
 
 public class Room {
-	private String room;
 
+	String room;
+	
 	public Room() {
 		
 	}
 	
 	public String get(String data)
 	{
-		//room = "E2004";
 		
 		String delims = "[\n]+";
 		String[] tokens = data.split(delims);
