@@ -105,7 +105,11 @@ public class Main {
 				}
 				else {
 					System.out.println("The lesson starts at " + QRhour);
-					QRSound2.main('9');
+					if(QRhour == 9){
+						QRSound2.main('9');
+					}else if(QRhour == 11){
+						QRSound2.main('1');
+					}
 				}
 			}
 			else{

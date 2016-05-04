@@ -70,6 +70,9 @@ public class QRSound2 {
 		case '9':
 			fn = location.getFile() + "../src/ressources/9.wav"; // lesson starts at 9
 			break;
+		case '1':
+			fn = location.getFile() + "../src/ressources/11.wav"; // lesson starts at 11
+			break;
 		case 's':
 			fn = location.getFile() + "../src/ressources/s.wav"; //super late 1H +
 			break;
