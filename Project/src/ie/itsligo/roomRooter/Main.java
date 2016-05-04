@@ -22,10 +22,10 @@ public class Main {
 		//static String qrCodeData = "Day: Tuesday\nTime: 09:00 to 11:00\nSubject: Software Engineering\nRoom: E2004";
 		
 		//QRcode2
-		//static String qrCodeData = "Day: Wenesday\nTime: 14:00 to 16:00\nSubject: Microcontroller Programming\nRoom: A0006";
+		//static String qrCodeData = "Day: Wednesday\nTime: 14:00 to 16:00\nSubject: Microcontroller Programming\nRoom: A0006";
 		
 		//QRcode3
-		static String qrCodeData = "Day: Wednesday\nTime: 16:00 to 18:00\nSubject: Software Engineering\nRoom: B1002";
+		static String qrCodeData = "Day: Thursday\nTime: 11:00 to 13:00\nSubject: Software Engineering\nRoom: E2004";
 		
 		
 		static QR qr = new QR(qrCodeData, filePath);
@@ -68,7 +68,6 @@ public class Main {
 			
 			if((line00[0].equals("Day:")!=true)||(line01[0].equals("Time:")!=true)||(line02[0].equals("Subject:")!=true)||(line03[0].equals("Room:")!=true)){
 				QRSound2.main('w');
-				QRSound2.main('z');
 				System.exit(0);
 			}
 			
@@ -76,7 +75,6 @@ public class Main {
 			
 			//Find the hour
 			String thehour = hour.get(QRdata);
-			//System.out.println("The hour is " + thehour);
 			int Currenthour = Integer.parseInt(hour.hour);
 			int QRhour = Integer.parseInt(thehour);
 			

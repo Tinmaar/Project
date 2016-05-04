@@ -1,16 +1,13 @@
 package ie.itsligo. roomRooter;
 
 public class Room {
-
-	String room;
 	
 	public Room() {
 		
 	}
 	
 	public String get(String data)
-	{
-		
+	{	
 		String delims = "[\n]+";
 		String[] tokens = data.split(delims);
 		
